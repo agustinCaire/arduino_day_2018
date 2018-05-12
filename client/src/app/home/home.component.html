@@ -1,0 +1,63 @@
+<div class="cont">
+
+  <h1 class="my-title">&lt;Arduino Cooling/&gt;</h1>
+
+  <div class="content-cont">
+    <div class="chart">
+      <app-chart></app-chart>
+    </div>
+
+    <div class="info-text box-shadow--6dp">
+      <h3 class="text-center">Temperatura actual</h3>
+      <div class="info text-danger">{{data.input}}</div>
+      <h3 class="text-center">Temperatura deseada</h3>
+      <div class="info text-primary">{{data.setPoint}}</div>
+
+<!--
+      <div class="info-add-cont">
+        <div class="info-add-elem">
+          <h6 class="text-center">PWM</h6>
+          <div class="info2 text-success">{{data.output}}</div>
+        </div>
+        <div class="info-add-elem">
+          <h6 class="text-center">KP</h6>
+          <div class="info2 text-secondary">{{data.KP}}</div>
+        </div>
+        <div class="info-add-elem">
+          <h6 class="text-center">KI:</h6>
+          <div class="info2 text-secondary">{{data.KI}}</div>
+        </div>
+        <div class="info-add-elem">
+          <h6 class="text-center">KD</h6>
+          <div class="info2 text-secondary">{{data.KD}}</div>
+        </div>
+        <div class="info-add-elem">
+          <h6 class="text-center">Time</h6>
+          <div class="info2 text-secondary">{{data.time}}</div>
+        </div>
+      </div>
+      -->
+
+
+
+
+
+      <div class="input-group input-cont mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">Temperatura</span>
+        </div>
+        <input class="form-control"
+               type="number"
+               [value]="input"
+               (input)="input = $event.target.value"
+               (keyup.enter)="setTemp()"
+        />
+      </div>
+
+      <button class="btn btn-info" (click)="setTemp()">Enviar</button>
+
+    </div>
+  </div>
+
+
+</div>

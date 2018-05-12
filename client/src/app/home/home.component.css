@@ -1,0 +1,67 @@
+.cont{
+  display: flex;
+  width: 96vw;
+  margin:auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-cont{
+  display: flex;
+  flex: 1 1 auto;
+  margin:1rem;
+  width:100%;
+  align-items: center;
+}
+
+.info-text{
+  flex: 0 0 300px;
+  margin-left:.5rem;
+  padding: .5rem;
+  height:auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+}
+
+.info{
+  text-align: center;
+  font-size: 72px;
+  font-weight: bold;
+}
+
+.info2{
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.info-add-cont{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.info-add-elem{
+  flex: 0 1 auto;
+  margin:.5rem;
+}
+
+.input-cont{
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.chart{
+  flex: 10 1 10vw;
+}
+
+.box-shadow--6dp {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12), 0 3px 5px -1px rgba(0, 0, 0, .2);
+}
+
+.my-title{
+  color: #FFF !important;
+  font-weight: bold !important;
+  text-shadow: 0 0 25px #000;
+}
